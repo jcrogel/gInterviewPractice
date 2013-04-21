@@ -48,16 +48,7 @@ class JCHeap
 
 			if(largestValue != i)
 			{
-				//std::cout << "i: " << i << " Value: " << (*src)[i] << " largestIndex: " << largestValue << " largestValue: " << (*src)[largestValue] << std::endl;
 				JCHeap::__swapXY(src, i, largestValue);
-				/*
-				std::cout << "Step:" << i << "; ";
-				for (std::vector<int>::iterator I = src->begin(); I!= src->end(); I++)
-				{
-					std::cout << (*I) << ",";
-				}
-				std::cout << std::endl;
-				*/
 				JCHeap::__maxHeapify(src, largestValue);
 			}
 
